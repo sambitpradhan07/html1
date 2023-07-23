@@ -1,0 +1,30 @@
+<html lang="eg">
+	 <head>
+		<title>Ex13</title>
+	    <link rel="icon" href="logo2.png"/>
+		<link rel="stylesheet" href="mystyles.css"/> <!-- linking external css-->
+	</head>
+  <body>
+	hii js
+	<script>
+		const myPromise=new Promise((resolve,reject)=>{
+        let a=4,b=5
+		c=a+b
+		if (c===8) {
+			resolve(`yes, ${a} + ${b} = 8`)
+			
+		} else {
+			reject(`no, ${a} + ${b} !=8`)
+			
+		}
+		})
+
+		myPromise.then((m)=>{
+        console.log(m)
+		}).catch((err)=>{
+			console.log(err)
+		})
+
+	</script>
+  </body>
+</html>
